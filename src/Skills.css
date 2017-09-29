@@ -1,0 +1,35 @@
+[class*=" devicon-"], [class^=devicon-] {
+    font-size:3.5em;
+}
+#skills {
+    padding-top:10px;
+    height:100%;
+}
+
+#skills li {
+    opacity:0;
+}
+.sc-launcher{
+    background-color:#dd2c00!important;
+}
+.sc-launcher:hover{
+    cursor:pointer;
+}
+.sc-header{
+    background-color:#dd2c00!important;
+}
+.sc-chat-window{
+    z-index:999999;
+}
+.sc-header--team-name:hover{
+    background-color:#C72302!important;
+}
+.sc-header--close-button:hover{
+    background-color:#C72302!important;
+}
+.sc-user-input--emoji-icon-wrapper, .sc-user-input--send-icon-wrapper{
+    background-color:transparent!important;
+}
+.sc-message--content.sent .sc-message--text {
+    background-color:#C72302!important;
+}

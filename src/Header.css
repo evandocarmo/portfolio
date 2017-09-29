@@ -1,0 +1,26 @@
+nav {
+  background-color:#212121;
+  z-index:9999;
+}
+nav .brand-logo {
+  position: relative !important;
+}
+.intro {
+  display:inline;
+}
+.Typist .Cursor {
+  display: inline-block;
+  color:white;
+  font-size:30px;
+}
+  .Typist .Cursor--blinking {
+    opacity: 1;
+    animation: blink 1s linear infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
