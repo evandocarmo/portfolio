@@ -3,6 +3,9 @@ import './Skills.css';
 import Materialize from 'materialize-css';
 import $ from 'jquery';
 import { Launcher } from 'react-chat-window';
+import openSocket from 'socket.io-client';
+
+const socket = openSocket('http://localhost:8000');
 
 class Skills extends Component {
   constructor(){
@@ -14,7 +17,8 @@ class Skills extends Component {
   onMessageWasSent(message) {
     this.setState({
       messageList:[...this.state.messageList, message]
-    })
+    });
+    socket.emit('message',message);
     console.log(this.state.messageList,message);
   }
   
